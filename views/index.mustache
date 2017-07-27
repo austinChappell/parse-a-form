@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parse Form</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form action="/signup" method="POST">
+        <input id="name" type="text" name="name" placeholder="Name" value="{{ name }}" />
+        <input id="email" type="text" name="email" placeholder="Email" value="{{ email }}" />
+        <input id="birthYear" type="number" name="birthYear" placeholder="Birth Year" value="{{ birthYear }}" />
+        <select id="position" name="position">
+          <option name="selection" value="">-- position --</option>
+          <option name="selection" value="tm">Technical Manager</option>
+          <option name="selection" value="dev">Developer</option>
+          <option name="selection" value="ui">UI Designer</option>
+          <option name="selection" value="gd">Graphic Designer</option>
+        </select>
+        <input id="password" type="password" name="password" placeholder="Create Password" value="{{ password }}" />
+        <input id="submit" type="submit" value="Sign Up" />
+        <ul>
+          {{ #errors }}
+          <li>{{ msg }}</li>
+          {{ /errors }}
+        </ul>
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  background: #ACCFCC;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input, select {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  font-size: 18px;
+  background-color: #EFEFEF;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submit {
+  width: auto;
+}
